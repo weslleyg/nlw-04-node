@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { getCustomRepository } from 'typeorm';
 import { UsersRepository } from '../repositories/UsersRepository';
 
-class UserControler {
+class UserController {
     async create(req: Request, res: Response) {
         const { name, email } = req.body;
 
@@ -28,4 +28,4 @@ class UserControler {
     }
 }
 
-export { UserControler };
+export { UserController };
