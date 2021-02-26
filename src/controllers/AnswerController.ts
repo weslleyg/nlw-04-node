@@ -12,7 +12,7 @@ class AnswerController {
         const surveysUsersRepository = getCustomRepository(SurveysUsersRepository);
 
         const surveyUser = await surveysUsersRepository.findOne({
-            id: String(u)
+            id: String(u),
         });
 
         if(!surveyUser) {
